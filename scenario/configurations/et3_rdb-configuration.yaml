@@ -1,0 +1,17 @@
+t3: '1.0'
+info:
+  id: parts-tododb-dataset
+  version: 1.0.0
+  summary: TODODBへのDataSetアクセスを行う
+  description: このシナリオファイルは、サンプルとしてTODODBへのDataSetアクセスを行うサンプルです。
+configurations:
+  - configuration: "RdbConnectionConfiguration"
+    id: "tododb-connection-config"
+    summary: "TODODBに対する接続定義."
+    description: "TODODBに対する接続定義."
+    driverClassName: "com.mysql.jdbc.Driver"
+    url: "jdbc:mysql://${host}:${dbport}/${dbschema}?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
+    username: "${dbuser}"
+    password: "${dbpassword}"
+    schema: "${dbschema}"
+    rdbKind: "mysql"

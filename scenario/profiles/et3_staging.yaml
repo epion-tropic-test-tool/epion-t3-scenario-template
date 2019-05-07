@@ -1,0 +1,11 @@
+t3: '1.0'
+info:
+  id: profile-staging
+  version: 1.0.0
+  summary: ステージング環境（Staging）のプロファイル値定義
+  description: ステージング環境（Staging）のプロファイル値定義
+profiles:
+  staging :
+    schema : http
+    host : test
+    port : 8080

@@ -1,0 +1,13 @@
+t3: '1.0'
+# カスタム機能定義
+customs:
+  # カスタム機能の定義（名称と実装パッケージ）
+  # なお、クラスパスに実装パッケージを参照できるクラスもしくはJarが含まれていることが必須となる
+  packages:
+    core: "com.epion_t3.core"
+    basic: "com.epion_t3.basic"
+    rest: "com.epion_t3.rest"
+    rdb: "com.epion_t3.rdb"
+    log: "com.epion_t3.log"
+    selenium: "com.epion_t3.selenium"
+    # ssh: "com.epion_t3.ssh"

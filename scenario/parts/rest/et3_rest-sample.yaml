@@ -1,0 +1,36 @@
+t3: '1.0'
+info:
+  id: parts-rest-sample
+  version: 1.0.0
+  summary: TODOリソースのAPIコールパーツ - Ceate
+  description: このシナリオファイルは、サンプルとしてTODOリソースを扱うREST-APIを呼び出すサンプルです。
+commands:
+  - id: post-sample-001
+    summary: TODOリソース作成（create） - 正常系.
+    description: TODOリソースの作成（create）の正常系確認パターン.
+    command: "ExecuteRestApi"
+    request:
+      method: post
+      headers:
+        "Content-Type" : "application/json"
+        "Accept" : "application/json"
+      targetUrl: ${schema}://${host}:${port}/todos
+      body: |
+        {
+          "title" : "タイトル",
+          "description" : "詳細"
+        }
+  - id: get-sample-001
+    summary: TODOリソース参照（refer） - 正常系.
+    description: TODOリソースの参照（refer）の正常系確認パターン.
+    command: "ExecuteRestApi"
+    request:
+      method: get
+      targetUrl: ${schema}://${host}:${port}/todos?todoId=${todoId}
+  - id: get-sample-002
+    summary: TODOリソース参照（refer） - 異常系.
+    description: TODOリソースの参照（refer）の異常系確認パターン.
+    command: "ExecuteRestApi"
+    request:
+      method: get
+      targetUrl: ${schema}://${host}:${port}/todos

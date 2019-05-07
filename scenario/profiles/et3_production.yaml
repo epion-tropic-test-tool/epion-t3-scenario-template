@@ -1,0 +1,11 @@
+t3: '1.0'
+info:
+  id: profile-production
+  version: 1.0.0
+  summary: 本番環境（Production）のプロファイル値定義
+  description: 本番環境（Production）のプロファイル値定義
+profiles:
+  production :
+    schema : http
+    host : test
+    port : 8080

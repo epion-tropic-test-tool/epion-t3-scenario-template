@@ -1,0 +1,12 @@
+t3: '1.0'
+info:
+  id: parts-basic-sample
+  version: 1.0.0
+  summary: Basicコマンドのサンプル
+  description: このシナリオファイルは、Basicコマンドのサンプルです。
+commands:
+  - id: basic-sample-001
+    summary: ファイルコピーサンプル。
+    description: ファイルコピーサンプル。
+    command: "FileGet"
+    target: "/Users/takashimanozomu/work/30_pgworkspaces/intellij/epion-t3-targetapp-rest/epion-t3-targetapp-rest.log"

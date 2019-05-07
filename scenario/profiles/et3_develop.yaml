@@ -1,0 +1,15 @@
+t3: '1.0'
+info:
+    id: profile-develop
+    version: 1.0.0
+    summary: 開発環境（Local）のプロファイル値定義
+    description: 開発環境（Local）のプロファイル値定義
+profiles:
+  develop :
+    schema : http
+    host : localhost
+    port : 8080
+    dbport: 3306
+    dbschema: tododb
+    dbuser: user
+    dbpassword: password

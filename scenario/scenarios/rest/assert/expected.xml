@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+  <table name="todo">
+    <column>id</column>
+    <column>title</column>
+    <column>description</column>
+    <column>start</column>
+    <column>due</column>
+    <column>actual_start</column>
+    <column>actual_end</column>
+    <column>status</column>
+    <column>priority</column>
+    <column>tags</column>
+    <column>version</column>
+    <column>create_date</column>
+    <column>update_date</column>
+    <row>
+      <value>a74b88c2-ce66-4c13-99c0-fa283fe22ba4</value>
+      <value>タイトル</value>
+      <value>詳細</value>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+    </row>
+  </table>
+</dataset>

@@ -1,0 +1,9 @@
+t3: '1.0'
+info:
+  id: "scenarios-suite-sample"
+  version: 1.0.0
+  summary: "シナリオSuiteサンプル"
+  description: "シナリオSuiteサンプル"
+scenarios:
+  - ref: "scenarios-rest-sample"
+#  - ref: "scenarios-rest-sample"
