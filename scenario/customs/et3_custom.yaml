@@ -10,4 +10,5 @@ customs:
     rdb: "com.epion_t3.rdb"
     log: "com.epion_t3.log"
     selenium: "com.epion_t3.selenium"
-    # ssh: "com.epion_t3.ssh"
+    ssh: "com.epion_t3.ssh"
+    excel: "com.epion_t3.excel"

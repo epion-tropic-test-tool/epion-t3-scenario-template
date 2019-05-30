@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.epion_t3</groupId>
+    <artifactId>epion-t3-scenario-template</artifactId>
+    <version>0.0.1</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.epion_t3</groupId>
+            <artifactId>epion-t3-core</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.epion_t3</groupId>
+            <artifactId>epion-t3-basic</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.epion_t3</groupId>
+            <artifactId>epion-t3-log</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.epion_t3</groupId>
+            <artifactId>epion-t3-rest</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.epion_t3</groupId>
+            <artifactId>epion-t3-rdb</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.epion_t3</groupId>
+            <artifactId>epion-t3-excel</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.epion_t3</groupId>
+            <artifactId>epion-t3-ssh</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.6.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <executable>maven</executable>
+                    <mainClass>com.epion_t3.core.application.Application</mainClass>
+                    <workingDirectory>./</workingDirectory>
+                    <arguments>
+                        <argument>-v</argument>
+                        <argument>v1.0</argument>
+                        <argument>-m</argument>
+                        <argument>test</argument>
+                        <!-- プロファイルの指定 -->
+                        <argument>-p</argument>
+                        <argument>develop</argument>
+                        <!-- 対象シナリオ -->
+                        <argument>-t</argument>
+                        <argument>scenario-selenium-sample</argument>
+                        <argument>-s</argument>
+                        <argument>./scenario</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
