@@ -17,15 +17,17 @@ repositories {
 dependencies {
     // Core
     //et3 'com.epion_t3:epion-t3-core:0.0.1'
-    et3 project(':submodules:epion-t3-core')
+    et3 project(':epion-t3-core-dev')
     // Customs
-    et3 'com.epion_t3:epion-t3-basic:0.0.1'
+    //et3 'com.epion_t3:epion-t3-basic:0.0.1'
+    et3 project(':epion-t3-basic-dev')
     et3 'com.epion_t3:epion-t3-log:0.0.1'
     et3 'com.epion_t3:epion-t3-rest:0.0.1'
     et3 'com.epion_t3:epion-t3-rdb:0.0.1'
     et3 'com.epion_t3:epion-t3-ssh:0.0.1'
     et3 'com.epion_t3:epion-t3-excel:0.0.1'
-    et3 project(':modules:epion-t3-selenium')
+    //et3 'com.epion_t3:epion-t3-selenium:0.0.1'
+    et3 project(':epion-t3-selenium-dev')
 
 }
 

@@ -1,0 +1,10 @@
+rootProject.name = 'epion-t3-scenario-template'
+
+include ':epion-t3-core-dev'
+project(':epion-t3-core-dev').projectDir = new File('../epion-t3-core')
+
+include ':epion-t3-basic-dev'
+project(':epion-t3-basic-dev').projectDir = new File('../epion-t3-basic')
+
+include ':epion-t3-selenium-dev'
+project(':epion-t3-selenium-dev').projectDir = new File('../epion-t3-selenium')
