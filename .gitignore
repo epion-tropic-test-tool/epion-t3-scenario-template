@@ -56,3 +56,6 @@ nbdist/
 ehthumbs.db
 Icon?
 Thumbs.db
+
+### epion-t3 ###
+result/*
