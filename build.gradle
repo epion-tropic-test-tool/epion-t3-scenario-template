@@ -17,19 +17,21 @@ repositories {
 dependencies {
 
     // Core
-    et3 'com.epion_t3:epion-t3-core:0.0.1'
-    // et3 project(':epion-t3-core-dev')
+    et3 'com.epion_t3:epion-t3-core:0.0.2'
     // Customs
     et3 'com.epion_t3:epion-t3-basic:0.0.1'
-    // et3 project(':epion-t3-basic-dev')
     et3 'com.epion_t3:epion-t3-log:0.0.1'
     et3 'com.epion_t3:epion-t3-rest:0.0.1'
     et3 'com.epion_t3:epion-t3-rdb:0.0.1'
     et3 'com.epion_t3:epion-t3-ssh:0.0.1'
     et3 'com.epion_t3:epion-t3-excel:0.0.1'
     et3 'com.epion_t3:epion-t3-selenium:0.0.1'
-    // et3 project(':epion-t3-selenium-dev')
+    et3 'com.epion_t3:epion-t3-aws-s3:0.0.2'
 
+    // XML API
+    et3 'javax.xml.bind:jaxb-api:2.3.0'
+    et3 'com.sun.xml.bind:jaxb-core:2.3.0'
+    et3 'com.sun.xml.bind:jaxb-impl:2.3.0'
 
 }
 
@@ -44,7 +46,7 @@ task execute(type: JavaExec) {
             '-p',
             'develop',
             '-t',
-            'scenario-selenium-sample',
+            'scenario-aws-selenium-sample',
             '-s',
             "${projectDir}/scenario"
     ]

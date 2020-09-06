@@ -12,3 +12,4 @@ customs:
     selenium: "com.epion_t3.selenium"
     ssh: "com.epion_t3.ssh"
     excel: "com.epion_t3.excel"
+    aws-s3: "com.epion_t3.aws.s3"

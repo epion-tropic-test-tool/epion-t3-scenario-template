@@ -1,0 +1,36 @@
+t3: '1.0'
+################################################
+# 基本情報定義
+################################################
+info:
+  id: "scenario-aws-s3-sample"
+  version: 1.0.0
+  summary: "AWS S3アクセスのサンプル"
+  description: "AWS S3アクセスのサンプル"
+################################################
+# Flow定義
+################################################
+flows:
+  - id: "flow-001"
+    type: "CommandExecute"
+    ref: "aws-s3-sample-command-001"
+  - id: "flow-002"
+    type: "CommandExecute"
+    ref: "aws-s3-sample-command-002"
+################################################
+# コマンド定義
+################################################
+commands:
+  - id: "aws-s3-sample-command-001"
+    summary: "AWS S3へのオブジェクト登録."
+    description: "AWS S3へのオブジェクト登録."
+    command: "AwsS3Put"
+    target: "data/sample.txt"
+    bucket: "samplebucket"
+    key: "ettt/sample/sample.txt"
+  - id: "aws-s3-sample-command-002"
+    summary: "AWS S3からのオブジェクト取得."
+    description: "AWS S3からのオブジェクト取得."
+    command: "AwsS3Get"
+    bucket: "samplebucket"
+    key: "ettt/sample/sample.txt"
