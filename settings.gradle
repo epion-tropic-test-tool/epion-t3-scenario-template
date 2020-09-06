@@ -8,3 +8,6 @@ project(':epion-t3-basic-dev').projectDir = new File('../epion-t3-basic')
 
 include ':epion-t3-selenium-dev'
 project(':epion-t3-selenium-dev').projectDir = new File('../epion-t3-selenium')
+
+include ':epion-t3-aws-s3-dev'
+project(':epion-t3-aws-s3-dev').projectDir = new File('../epion-t3-aws-s3')
