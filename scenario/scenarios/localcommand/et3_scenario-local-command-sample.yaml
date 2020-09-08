@@ -1,0 +1,27 @@
+t3: '1.0'
+################################################
+# 基本情報定義
+################################################
+info:
+  id: "scenario-local-command-sample"
+  version: 1.0.0
+  summary: "ローカルコマンドのサンプル"
+  description: "ローカルコマンドのサンプル"
+################################################
+# Flow定義
+################################################
+flows:
+  - id: "flow-001"
+    type: "CommandExecute"
+    ref: "local-command-sample-command-001"
+################################################
+# コマンド定義
+################################################
+commands:
+  - id: "local-command-sample-command-001"
+    summary: "ローカルコマンドの実行."
+    description: "ローカルコマンドの実行."
+    command: "ExecuteLocalCommand"
+    target: "ls"
+    args:
+      - "-la"
