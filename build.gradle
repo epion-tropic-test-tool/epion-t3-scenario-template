@@ -19,7 +19,7 @@ dependencies {
     // Core
     et3 'com.epion_t3:epion-t3-core:0.0.2'
     // Customs
-    et3 'com.epion_t3:epion-t3-basic:0.0.1'
+    et3 'com.epion_t3:epion-t3-basic:0.0.2'
     et3 'com.epion_t3:epion-t3-log:0.0.1'
     et3 'com.epion_t3:epion-t3-rest:0.0.1'
     et3 'com.epion_t3:epion-t3-rdb:0.0.1'
@@ -46,7 +46,7 @@ task execute(type: JavaExec) {
             '-p',
             'develop',
             '-t',
-            'scenario-aws-selenium-sample',
+            'scenario-selenium-sample',
             '-s',
             "${projectDir}/scenario"
     ]
