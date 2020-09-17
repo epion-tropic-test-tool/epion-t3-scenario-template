@@ -33,6 +33,9 @@ dependencies {
     et3 'com.sun.xml.bind:jaxb-core:2.3.0'
     et3 'com.sun.xml.bind:jaxb-impl:2.3.0'
 
+    // When use AWS command.
+    et3 platform('software.amazon.awssdk:bom:2.14.11')
+
 }
 
 task execute(type: JavaExec) {
