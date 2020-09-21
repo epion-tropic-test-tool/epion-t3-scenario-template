@@ -15,3 +15,15 @@ configurations:
     password: "${dbpassword}"
     schema: "${dbschema}"
     rdbKind: "mysql"
+  - configuration: "RdbConnectionConfiguration"
+    id: "example-connection-config"
+    summary: "EXAMPLEに対する接続定義."
+    description: "EXAMPLEに対する接続定義."
+
+    url: jdbc:oracle:thin:@//${dbhost_example}:${dbport_example}/${db_example}
+    #url: jdbc:oracle:thin:@${host}:${dbport}:${dbschema}
+    username: "${dbuser_example}"
+    password: "${dbpassword_example}"
+    driverClassName: oracle.jdbc.driver.OracleDriver
+    rdbKind: "oracle"
+    schema: "${dbuser_example}"

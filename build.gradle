@@ -22,7 +22,7 @@ dependencies {
     et3 'com.epion_t3:epion-t3-basic:0.0.2'
     et3 'com.epion_t3:epion-t3-log:0.0.1'
     et3 'com.epion_t3:epion-t3-rest:0.0.1'
-    et3 'com.epion_t3:epion-t3-rdb:0.0.1'
+    et3 'com.epion_t3:epion-t3-rdb:0.0.2'
     et3 'com.epion_t3:epion-t3-ssh:0.0.1'
     et3 'com.epion_t3:epion-t3-excel:0.0.1'
     et3 'com.epion_t3:epion-t3-selenium:0.0.1'
@@ -35,6 +35,10 @@ dependencies {
 
     // When use AWS command.
     et3 platform('software.amazon.awssdk:bom:2.14.11')
+
+    // When use rdb command.
+    // JDBC Driver
+    et3 'com.oracle.database.jdbc:ojdbc8:19.7.0.0'
 
 }
 
