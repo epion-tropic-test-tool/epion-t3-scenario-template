@@ -13,3 +13,8 @@ profiles:
     dbschema: tododb
     dbuser: user
     dbpassword: password
+    dbuser_example: TEST
+    dbpassword_example: TEST
+    dbhost_example: localhost
+    dbport_example: 1521
+    db_example: XEPDB1

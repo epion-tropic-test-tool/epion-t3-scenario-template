@@ -55,7 +55,7 @@ task execute(type: JavaExec) {
             '-p',
             'develop',
             '-t',
-            'scenarios-suite-dap-dataload-no001',
+            'scenario-selenium-sample',
             '-s',
             "${projectDir}/scenario"
     ]

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+  <EXAMPLE ID="id001" NAME="ああ" AGE="20"/>
+  <EXAMPLE ID="id002" NAME="いい" AGE="21"/>
+  <EXAMPLE ID="id003" NAME="うう" AGE="22"/>
+  <EXAMPLE ID="id004" NAME="ええ" AGE="23"/>
+</dataset>

@@ -77,7 +77,7 @@ commands:
     browser: "chrome"
     height: 768
     width: 1024
-    driverPath: "driver/chromedriver"
+    driverPath: "driver/chromedriver.exe"
   - id: "selenium-sample-command-002"
     summary: "指定したURLへ遷移."
     description: "指定したURLへ遷移."
