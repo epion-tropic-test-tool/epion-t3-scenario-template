@@ -22,11 +22,13 @@ dependencies {
     et3 'com.epion_t3:epion-t3-basic:0.0.2'
     et3 'com.epion_t3:epion-t3-log:0.0.1'
     et3 'com.epion_t3:epion-t3-rest:0.0.1'
-    et3 'com.epion_t3:epion-t3-rdb:0.0.1'
+    et3 'com.epion_t3:epion-t3-rdb:0.0.2'
     et3 'com.epion_t3:epion-t3-ssh:0.0.1'
     et3 'com.epion_t3:epion-t3-excel:0.0.1'
     et3 'com.epion_t3:epion-t3-selenium:0.0.1'
+    et3 'com.epion_t3:epion-t3-aws-core:0.0.1'
     et3 'com.epion_t3:epion-t3-aws-s3:0.0.2'
+    et3 'com.epion_t3:epion-t3-snowflake:0.0.1'
 
     // XML API
     et3 'javax.xml.bind:jaxb-api:2.3.0'
@@ -35,6 +37,10 @@ dependencies {
 
     // When use AWS command.
     et3 platform('software.amazon.awssdk:bom:2.14.11')
+
+    // When use Snowflake command.
+    et3 'net.snowflake:snowflake-jdbc:3.12.13'
+    et3 'com.oracle.database.jdbc:ojdbc10:19.8.0.0'
 
 }
 
@@ -49,7 +55,7 @@ task execute(type: JavaExec) {
             '-p',
             'develop',
             '-t',
-            'scenario-selenium-sample',
+            'scenarios-suite-dap-dataload-no001',
             '-s',
             "${projectDir}/scenario"
     ]

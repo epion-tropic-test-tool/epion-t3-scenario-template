@@ -9,5 +9,14 @@ rootProject.name = 'epion-t3-scenario-template'
 //include ':epion-t3-selenium-dev'
 //project(':epion-t3-selenium-dev').projectDir = new File('../epion-t3-selenium')
 
+//include ':epion-t3-aws-core-dev'
+//project(':epion-t3-aws-core-dev').projectDir = new File('../epion-t3-aws-core')
+
 //include ':epion-t3-aws-s3-dev'
 //project(':epion-t3-aws-s3-dev').projectDir = new File('../epion-t3-aws-s3')
+
+//include ':epion-t3-rdb-dev'
+//project(':epion-t3-rdb-dev').projectDir = new File('../epion-t3-rdb')
+
+//include ':epion-t3-snowflake-dev'
+//project(':epion-t3-snowflake-dev').projectDir = new File('../epion-t3-snowflake')
